@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.head{
+    padding: 6vh 0;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+#input{
+    width: 30%;
+    margin: 8vh auto;
+    height: 30px;
+    font-weight: bold;
+    padding: 5px 5px;
+    border: none;
+    font-family: cursive;
+    transition: 0.5s;
+    backdrop-filter: blure(5px);
+    color: black;
+    border-radius: 5px;
+}
+
+#input2{
+    width: 50%;
+    height: 4vh;
+    padding:5px 5px;
+    margin: 1vh;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: white;
+    border: 5px soild blue;
+    font-family: cursive;
+}
+
+#input:focus{
+    outline: none;
+    border: 2px solid rgb(71, 164, 226);
+    transition: 0.5s;
+}
+
+#btn{
+    color: whitesmoke;
+    background-color: rgba(46, 236, 46, 0.808);
+    padding: 1vh 1vh;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn2{
+    color: rgba(255, 0, 0, 0.712);
+    background-color: whitesmoke;
+    margin: auto 5px;;
+    margin-bottom: 7px;
+    padding: 4px 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn3{
+    color: rgba(18, 53, 252, 0.945);
+    background-color: whitesmoke;
+    margin: auto;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    padding: 4px 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#list{
+    list-style: none;
+    margin: auto;
+    width: 35%;
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.listItem{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.75vh;
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+@media screen and (max-width:768px){
+    #input{
+        width: 55%;
+    }
+    #list{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    #input{
+        width: 75%;
+    }
+    #list{
+        width: 90%;
+    }
+}
