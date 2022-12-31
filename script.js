@@ -63,7 +63,6 @@ function editTask(curEle){
         curEle.parentElement.replaceChild(ibox,replace);
     }
     else{
-        id = 1;
         curEle.innerHTML = `<i class="fas fa-edit"></i>`;
         const task = document.createElement('h4');
         const update = document.getElementById('input2').value;
@@ -72,6 +71,7 @@ function editTask(curEle){
             alert('Please enter task !!');
         }
         else{
+            id = 1;
             const taskId = curEle.parentElement.id;
             tasks.map((task)=>{
                 if(task.id == taskId){
